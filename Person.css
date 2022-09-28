@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville&family=Raleway&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    background-color: #eee4e4;
+}
+
+span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: purple;
+    font-size: 18px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    border: 2px red solid;
+    background-color: #f3d2d2;
+    border: 5px solid #fcc4c4;
+    border-radius: 0px 0px 10px 10px;
+}
+
+header a {
+    font-family: 'Libre Baskerville', serif;
+    color: purple;
+    text-decoration: none;
+}
+
+header a:hover {
+    transition: 1s;
+    cursor: pointer;
+    scale: 1.2;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+img {
+    border: 5px solid #fcb8b8;
+    border-radius: 5px;
+    height: 400px;
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45vw;
+    height: 515px;
+    background-color: #f3d2d2;
+    border: 5px solid #fcb8b8;
+    border-radius: 5px;
+    box-shadow: 17px -12px 0px 1px rgba(0, 0, 0, 0.76);
+    margin: 20px;
+    padding: 20px;
+}
+
+.ID {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    gap: 5px;
+}
+
+.info p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: rgb(29, 28, 28);
+}
+
+.formacao-academica {
+    padding: 20px;
+    margin: 20px;
+}
+
+.linha-tempo {
+    position: relative;
+    width: 30vw;
+}
+
+.linha-tempo::after {
+    content: " ";
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.conteudo {
+    padding: 10px;
+    position: relative;
+    background-color: inherit;
+    width: 12vw;
+}
+
+.esquerda {
+    box-sizing: content-box;
+    left: 0;
+}
+
+.direita {
+    box-sizing: content-box;
+    left: 50%;
+}
+
+.conteudo {
+    padding: 20px 30px;
+    background-color: #f3bfbf;
+    position: relative;
+    border-radius: 0px 5px;
+}
+
+.download-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: 100vw;
+    height: 10vw;
+    border-top: 4px solid #e9b4b4;
+    border-bottom: 4px solid #ebaaaa;
+    background-image: linear-gradient(to bottom, #f3bfbf, #f5bebe, #f7bdbd, #f8bbbb, #fababa, #fbb9b9, #fbb9b9, #fcb8b8, #fcb8b8, #fcb9b9, #fbb9b9, #fbb9b9);
+}
+
+.background {
+    width: 30vw;
+    font-family: 'Raleway', sans-serif;
+}
+
+.background a {
+    text-decoration: none;
+}
+
+.background span {
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 920px) {
+
+    img {
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        width: 50vw;
+        height: 50vw;
+        border-radius: 50%;
+    }
+
+    .info p,
+    .info span,
+    .conteudo p,
+    .conteudo h2 {
+        font-size: 3.5vw;
+    }
+
+    .apresentacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+        margin-top: 10vw;
+    }
+
+    .ID {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formacao-academica {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conteudo {
+        padding: 10px;
+        position: relative;
+        width: 30vw;
+    }
+
+    .esquerda {
+        box-sizing: content-box;
+        left: -50%;
+    }
+
+    .direita {
+        box-sizing: content-box;
+        left: 50%;
+    }
+
+
+    .download-c {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40vw;
+        border-top: 4px solid #e9b4b4;
+        border-bottom: 4px solid #ebaaaa;
+        background-image: linear-gradient(to bottom, #f3bfbf, #f5bebe, #f7bdbd, #f8bbbb, #fababa, #fbb9b9, #fbb9b9, #fcb8b8, #fcb8b8, #fcb9b9, #fbb9b9, #fbb9b9);
+    }
+
+    .background,
+    .background span {
+        font-size: 3.5vw;
+        width: 100vw;
+
+    }
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 26px;
+    font-family: 'Baskervville', serif;
+    color: black;
+    background-color: rgb(238, 228, 228);
+
+}
+
+
+section.geral {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 52vw;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.img-eu {
+    box-shadow: 5px 5px 10px 1px #000;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.img-eu:hover {
+    transition: 3s;
+    filter: grayscale(25%);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.info span {
+    color: purple;
+    font-weight: 800;
+}
+
+.info .under {
+    color: black;
+    font-size: 26px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    line-height: 45px;
+}
+
+.info p {
+    font-size: 24px;
+    color: black;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav img {
+    width: 40px;
+    border-radius: 100%;
+    position: relative;
+}
+
+@media screen and (min-width: 360px) and (max-width: 910px) {
+    section.geral {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 25%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .img-eu {
+        width: 55vw;
+        height: 55vw;
+    }
+
+    .info p,
+    .info .under {
+        text-decoration: none;
+        text-align: center;
+        font-size: 9vw;
+    }
+
+    .info span {
+        line-height: 10vw;
+        font-size: 9vw;
+    }
+
+    nav img {
+        align-self: center;
+        justify-self: center;
+        width: 15vw;
+        height: 15vw;
+    }
+}

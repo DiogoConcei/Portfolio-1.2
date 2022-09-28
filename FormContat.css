@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Baskervville', serif;
+    color: black;
+    background-color: #eee4e4;
+}
+
+span {
+    font-family: 'Libre Baskerville', serif;
+    color: purple;
+    font-size: 26px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background-color: rgb(243, 210, 210);
+    border: 5px solid #fcc4c4;
+    border-radius: 0px 0px 10px 10px;
+}
+
+header a {
+    font-family: 'Libre Baskerville', serif;
+    color: purple;
+    text-decoration: none;
+}
+
+header a:hover {
+    transition: 1s;
+    cursor: pointer;
+    scale: 1.2;
+}
+
+main {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    margin: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid rgb(254, 190, 190);
+    border-radius: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    gap: 20px;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+input {
+    background-color: whitesmoke;
+    font-family: 'Libre Baskerville', serif;
+
+    border: none;
+    border-bottom: 4px solid rgba(252, 177, 177);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+textarea {
+    background-color: whitesmoke;
+    border: none;
+    border-bottom: 4px solid rgba(252, 177, 177);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input:hover {
+    transition: 1s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 12px;
+    font-family: 'Libre Baskerville', serif;
+    color: purple;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    background-color: whitesmoke;
+    border: none;
+    border-bottom: 4px solid rgba(252, 177, 177);
+    border-radius: 5px;
+    background-color: white;
+    font-size: 12px;
+    font-family: 'Libre Baskerville', serif;
+    color: purple;
+    padding: 10px;
+}
+
+.btn button:hover {
+    transition: 1s;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer section {
+    width: 600px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #f6d0d0, #f7d0d0, #f7d0d0, #f8cfcf, #f8cfcf, #f8cdcd, #f9caca, #f9c8c8, #f9c3c3, #f9bdbd, #f9b8b8, #f9b2b2);
+}
+
+footer div {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+footer img:hover {
+    cursor: pointer;
+    transition: 1s;
+    scale: 1.2;
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 910px) {
+
+    span,
+    h3 {
+        text-align: center;
+        font-size: 3.5vw;
+    }
+
+    img {
+        width: 10vw;
+    }
+
+    section {
+        width: 85vw;
+    }
+
+    input {
+        display: flex;
+        align-self: center;
+        width: 85vw;
+    }
+
+    .middle-input input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        width: 35vw;
+    }
+
+    textarea {
+        text-align: center;
+        width: 85vw;
+    }
+
+    .btn button {
+        text-align: center;
+        width: 20vw;
+    }
+}

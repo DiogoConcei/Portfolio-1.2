@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville&family=Raleway:wght@200&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Baskervville', serif;
+    color: black;
+    background-color: rgb(238, 228, 228);
+}
+
+span {
+    font-family: 'Libre Baskerville', serif;
+    color: purple;
+    font-size: 16px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    border: 2px red solid;
+    background-color: rgb(243, 210, 210);
+    border: 5px solid rgb(252, 196, 196);
+    border-radius: 0px 0px 10px 10px;
+}
+
+header a {
+    font-family: 'Libre Baskerville', serif;
+    color: purple;
+    text-decoration: none;
+}
+
+header a:hover {
+    transition: 1s;
+    cursor: pointer;
+    scale: 1.2;
+}
+
+.minha-jornada {
+    font-family: 'Libre Baskerville', serif;
+    margin: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    height: 200px;
+}
+
+.projetos-tec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tecnologias {
+    display: flex;
+    align-self: flex-start;
+    text-align: center;
+}
+
+.tech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech img,
+.project img {
+    width: 50px;
+}
+
+.tech img:hover,
+.codepen img:hover {
+    transition: 1s;
+    scale: 1.3;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.project {
+    display: flex;
+    flex-flow: row wrap;
+    width: 655px;
+    gap: 10px;
+}
+
+.codepen {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(243, 210, 210);
+    border-radius: 10px;
+    border: 5px solid rgb(248, 201, 201);
+}
+
+.codepen button {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 12px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.codepen:hover {
+    transition: 0.5s;
+    scale: 1.1;
+    border: 5px solid white;
+}
+
+.codepen div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    padding: 20px;
+}
+
+@media screen and (min-width: 360px) and (max-width:910px) {
+
+    .projetos-tec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .minha-jornada {
+        display: block;
+        text-align: center;
+        font-size: 4vw;
+        height: 240vw;
+    }
+
+    .tecnologias {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .project {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100vw;
+    }
+
+
+
+    span {
+        font-size: 4vw;
+    }
+
+}
